@@ -20,6 +20,12 @@ public class CalculatorTest {
         assertThat(Calculator.sum(3, 3)).isEqualTo(6);
     }
 
+    @Test
+    public void testSumAndSubtract() {
+        int result1 = Calculator.sum(3, 5);
+        int result2 = Calculator.subtract(8, 3);
+        assertThat(result1 - result2).isEqualTo(6);
+    }
 }
 
 
